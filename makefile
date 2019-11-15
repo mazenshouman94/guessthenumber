@@ -10,7 +10,7 @@ app.exe:$(Obj_files)
 	$(cc) $^ -o $@
 	
 clean:
-  rm $(clean_Target)
+	rm $(clean_Target)
 	
 %.o:%.c
 	$(cc) -c $< -o $@
